@@ -14,6 +14,52 @@ class BQLoader():
             "type": "STRING"
         },
         {
+            "name": "sessionControl",
+            "type": "STRING"
+        },    
+        {
+            "name": "userIp",
+            "type": "STRING"
+        }, 
+        {
+            "name": "userAgent",
+            "type": "STRING"
+        },     
+        {
+            "name": "geoId",
+            "type": "STRING"
+        },      
+        {
+            "name": "campaign",
+            "type": "RECORD",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "STRING"
+                },
+                {
+                    "name": "source",
+                    "type": "STRING"
+                },
+                {
+                    "name": "medium",
+                    "type": "STRING"
+                },
+                {
+                    "name": "keyword",
+                    "type": "STRING"
+                },
+                {
+                    "name": "content",
+                    "type": "STRING"
+                }
+            ]
+        },
+        {
+            "name": "nonInteractionHit",
+            "type": "BOOLEAN"
+        },
+        {
             "name": "type",
             "type": "STRING"
         },
