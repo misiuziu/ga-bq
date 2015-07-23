@@ -14,6 +14,18 @@ import re
 
 class MainHandler(webapp2.RequestHandler):
     params_mapping = {
+        
+        'sc' : 'sessionControl',
+        'uip': 'userIp', 
+        'ua': 'userAgent',
+        'geoid': 'geoId',
+        'cn': 'campaign.name',
+        'cs': 'campaign.source',
+        'cm': 'campaign.medium',
+        'ck': 'campaign.keyword',
+        'cc': 'campaign.content',
+        'ni': 'nonInteractionHit',
+        
         'cid': 'clientId',
         't': 'type',
         'v': 'version',
